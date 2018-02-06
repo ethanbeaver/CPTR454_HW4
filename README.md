@@ -2,6 +2,8 @@
 
 This is the programming portion of homework number 4 for CPTR455
 
+It's problem \#4 from section 5.5
+
 ## Getting Started
 
 Below details how to run this assignment.
@@ -24,7 +26,7 @@ Run the file using python
 python3 Closest_Pair.py
 ```
 
-I apologize for the extremely complicated process of setting up this assignment.
+I apologize for the extremely complicated process of running this code.
 
 ## Authors
 

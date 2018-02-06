@@ -1,12 +1,28 @@
+"""
+Homework #4 for CPTR455.
+
+Problem #4 from section 5.5
+
+Written By Ethan Beaver
+"""
+
 from math import sqrt, ceil
 import random
 
 
 def dist(point1, point2):
+    """Return the distance between two points."""
     return sqrt((point2[0]-point1[0])**2+(point2[1]-point1[1])**2)
 
 
 def brute_force(P):
+    """
+    Return the length between the closest pair of points.
+
+    Perform a brute force algorithm to find the closest pair.
+
+    Parameter P is a list of tuples
+    """
     closest_length = float("inf")
     for point1 in P:
         for point2 in P:
@@ -17,6 +33,14 @@ def brute_force(P):
 
 
 def closest_pair(P, Q):
+    """
+    Return the length between the closest pair of points.
+
+    Perform the closest pair algorithm described in
+    Introduction to the Design and Analysis of Algorithms by Anany Levitin
+
+    Parameters are lists of tuples sorted by x value and then by y value
+    """
     n = len(P)
     if n <= 3:
         return brute_force(P)
@@ -46,8 +70,8 @@ def closest_pair(P, Q):
         return sqrt(dminsq)
 
 
-# Test the above algorithm vs its brute force counterpart
 def test_cp(min_x, max_x, min_y, max_y, num_points, num_iterations):
+    """Test the above algorithm vs its brute force counterpart."""
     fail_count = 0
     for i in range(0, num_iterations):
         points = [
@@ -66,6 +90,7 @@ def test_cp(min_x, max_x, min_y, max_y, num_points, num_iterations):
             print("{} != {}".format(actual, algorithm))
     print("This algorithm failed {} times out of {}"
           .format(fail_count, num_iterations))
+
 
 if __name__ == "__main__":
     test_cp(-100, 100, -100, 100, 25, 10000)
