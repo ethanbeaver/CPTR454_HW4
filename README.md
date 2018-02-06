@@ -30,4 +30,4 @@ I apologize for the extremely complicated process of running this code.
 
 ## Authors
 
-* **Ethan Beaver** - *Initial work* - [EthanBeaver](https://github.com/ethanbeaver)
+* **[Ethan Beaver](https://github.com/ethanbeaver)**
