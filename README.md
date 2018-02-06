@@ -1,6 +1,6 @@
 # Homework 4
 
-This is the programming portion of homework number 4 for CPTR455
+This is the programming portion of homework number 4 for CPTR454
 
 It's problem \#4 from section 5.5
 
